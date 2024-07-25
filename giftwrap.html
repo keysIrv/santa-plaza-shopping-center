@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santa Plaza Shopping Center - Gift Wrapping Services</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #F0E68C; /* Changed background color */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
+      position: relative;
+    }
+    header {
+      background-color: #FFA500; /* Changed header background color */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #333; /* Dark background for navigation */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none; /* Remove default list styling */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+    }
+    nav ul li {
+      margin: 0 10px; /* Add spacing between items */
+      position: relative; /* Position for submenu */
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 15px; /* Padding for better clickable area */
+      display: block; /* Make anchor tags behave like block elements */
+    }
+    nav ul li a:hover {
+      background-color: #555; /* Darken background on hover */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      flex: 1; /* Fill remaining space in the flex container */
+    }
+    section#services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .service {
+      flex: 0 1 calc(50% - 20px); /* Adjusted width for responsiveness */
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
+    .service iframe {
+      max-width: 100%; /* Adjust video width */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      align-self: center; /* Center video vertically */
+    }
+    .service .service-content {
+      flex: 1; /* Take remaining space */
+      padding: 0 20px; /* Adjust padding as needed */
+    }
+    .service h3 {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    .service p {
+      font-size: 1.1em;
+      color: #666;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .service {
+        flex-direction: column; /* Stack videos on top of content on smaller screens */
+      }
+      .service iframe {
+        max-width: 100%; /* Full width for videos on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Santa Plaza Shopping Center</h1>
+  <nav>
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="servie.html">Services</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+      <!-- Add more navigation links as needed -->
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="service-details">
+    <h2>Gift Wrapping Services at Santa Plaza</h2>
+    <p>At Santa Plaza, we offer professional gift wrapping services to make your presents extra special. Whether it's for birthdays, holidays, or any celebration, our expert team ensures beautifully wrapped gifts with a personal touch.</p>
+    <p>Choose from a variety of wrapping papers, ribbons, and decorative accents to suit your style. Let us take care of the details so you can surprise your loved ones with impeccably wrapped gifts.</p>
+  </div>
+
+  <section id="services" class="services">
+    <div class="service">
+      <iframe  src="gifting.mp4" frameborder="0" allowfullscreen></iframe>
+      <div class="service-content">
+        <h3>Choose Your Style</h3>
+        <p>Select from our range of elegant wrapping papers and accessories to create a customized look for each gift.</p>
+      </div>
+
+    </div>
+    <div class="service">
+      <iframe  src="handsgifts.mp4" frameborder="0" allowfullscreen></iframe>
+      <div class="service-content">
+        <h3>Expert Team</h3>
+        <p>Our dedicated team of gift wrapping specialists ensures every package is wrapped with care and precision.</p>
+      </div>
+    </div>
+  </section>
+</div>
+<br><br><br><br><br><br>
+<footer>
+  <p>&copy; Santa Plaza Shopping Center. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santa Plaza Shopping Center - Features</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Resetting default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #FFA500;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Flexbox setup for services */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .service {
+      flex-basis: calc(50% - 20px); /* Adjusted width for responsive layout */
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
+
+    .service img {
+      max-width: 200px; /* Adjust size of images */
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .service-content {
+      flex: 1;
+    }
+
+    .service h3 {
+      font-size: 1.5em;
+      margin-top: 0;
+    }
+
+    .service p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    footer {
+      background-color: #FFA500;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    /* Horizontal navigation styles */
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    nav ul li a:hover {
+      background-color: #ddd;
+      color: rgb(0, 0, 0);
+    }
+
+    nav ul li a.active {
+      background-color: #aa2504;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Santa Plaza Shopping Center</h1>
+  <nav>
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+      <li><a href="CONTACT%20.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section id="services" class="services">
+    <div class="service">
+      <img src="ssanta.png" alt="Santa Plaza Supermarket">
+      <div class="service-content">
+        <h3>Santa Plaza Supermarket</h3>
+        <a href="santaplazasupermarket.html">Santa Plaza Supermarket</a>
+        <p>Witness the fantasy of a one-stop shop for a delightful shopping experience.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="santaplazasupermarket.jpg" alt="Santa Plaza Furniture">
+      <div class="service-content">
+        <h3>Santa Plaza Furniture</h3>
+        <a href="santaplazafuniture.html">Santa Plaza Furniture</a>
+        <p>Make your home a sweet paradise.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="santaplazafashion.jpg" alt="Santa Plaza Clothing Shop">
+      <div class="service-content">
+        <h3>Clothing Shop</h3>
+        <a href="santaplazasupermarket.html"> Santa Plaza Clothing Shop</a>
+      
+        <p>Indulge in a wide range of cuisines from our diverse selection of clothing lines.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="santa_event.png" alt="Event Spaces at Santa Plaza">
+      <div class="service-content">
+        <h3>Event Spaces</h3>
+        <p>Make your dream event a reality with our fully equipped event spaces. Perfect for festive gatherings, conferences, or social events.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="playground.png" alt="Santa's Workshop Kids Entertainment">
+      <div class="service-content">
+        <h3>Santa's Workshop (Kids' Entertainment)</h3>
+        <a href="santakidz.html">Santa's Workshop</a>
+        <p>Keep your little ones entertained at Santa's Workshop, featuring fun activities and meet-and-greets with Santa himself!</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="giftwrap.png" alt="Gift Wrapping Services at Santa Plaza">
+      <div class="service-content">
+        <h3>Gift Wrapping Services</h3>
+        <a href="giftwrap.html">  Santa Plaza Gift Wrapping Services </a>
+      
+       
+        <p>Take the stress out of gift-giving with our professional gift wrapping services. We'll make your presents look festive and beautiful.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="parkinglot.jpg" alt="Convenient Parking at Santa Plaza">
+      <div class="service-content">
+        <h3>Convenient Parking</h3>
+        <a href="parkinglot.html">  Santa Plaza Convenient Parking</a>
+        <p>Enjoy hassle-free parking with ample spaces available throughout the center.</p>
+      </div>
+    </div>
+
+    <!-- New section for Executive Barbershop -->
+    <div class="service">
+      <img src="cutmeloose(1)(1).png" alt="Executive Barbershop">
+      <div class="service-content">
+        <h3>Executive Barbershop</h3>
+        <p>Experience luxury grooming services at our Executive Barbershop. We offer premium haircuts, shaves, and grooming treatments in a sophisticated environment.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; Santa Plaza Shopping Center. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

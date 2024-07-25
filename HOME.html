@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santa Plaza Shopping Center - Features</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #F0E68C; /* Changed background color */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
+      position: relative;
+    }
+    header {
+      background-color: #FFA500; /* Changed header background color */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #333; /* Dark background for navigation */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none; /* Remove default list styling */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+    }
+    nav ul li {
+      margin: 0 10px; /* Add spacing between items */
+      position: relative; /* Position for submenu */
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 15px; /* Padding for better clickable area */
+      display: block; /* Make anchor tags behave like block elements */
+    }
+    nav ul li a:hover {
+      background-color: #555; /* Darken background on hover */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      flex: 1; /* Fill remaining space in the flex container */
+    }
+    section#about {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Additional styles for the Clothing Shop page */
+    .service-details {
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .service-details h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .service-details p {
+      font-size: 1.2em;
+      color: #666;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .service {
+      flex: 0 1 calc(50% - 20px);
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .service iframe {
+      width: 100%;
+      height: 315px;
+    }
+    .service-content {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Santa Plaza Shopping Center</h1>
+  <nav>
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="servie.html">Services</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="about">
+    <main>
+      <h2>Welcome to Santa Plaza Shopping Center!</h2>
+      <p>Santa Plaza is your one-stop shop for a delightful shopping experience. We offer a diverse range of stores, restaurants, and entertainment options under one roof. From trendy clothing boutiques to delectable dining choices, we cater to all your needs. Come explore, discover, and create lasting memories at Santa Plaza!</p>
+    </main>
+  </section>
+
+  <section id="services" class="services">
+    <div class="service">
+      <iframe width="560" height="315" src="santaplazavidz.mp4" frameborder="0" allowfullscreen></iframe>
+      <div class="service-content">
+        <h3>Virtual Tour</h3>
+        <p>Take a virtual tour of Santa Plaza Shopping Center to explore all our exciting offerings!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="service-selection" class="service-details">
+    <form id="serviceForm" action="booking_confirmation.php" method="post">
+      <label for="service">Select Service:</label>
+      <select name="service" id="service">
+        <option value="santaplazasupermarket.html">santa plaza super market</option>
+        <option value="santaplazafuniture.html">santa plaza funiture</option>
+        <option value="clothing.html">santa plaza clothing</option>
+      </select>
+      <button type="button" onclick="navigateToService()">Go</button>
+    </form>
+  </section>
+</div>
+
+
+
+<script>
+  function navigateToService() {
+    var serviceSelect = document.getElementById('service');
+    var selectedService = serviceSelect.value;
+    window.location.href = selectedService;
+  }
+</script>
+<br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <p>&copy; 2024 Santa Plaza Shopping Center. All rights reserved.</p>
+  </footer>
+</body>
+</html>
